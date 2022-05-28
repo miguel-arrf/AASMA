@@ -8,3 +8,7 @@ pyglet==1.5.26
 rware==1.0.3
 six==1.16.0
 zipp==3.8.0
+
+ray==1.12.1
+astar==0.93
+setuptools==57.0.0
