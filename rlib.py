@@ -23,7 +23,6 @@ env_name = "rware:rware-tiny-1ag-v1"
 checkpoint_path = "./ray_results/pursuit/RAINBOW_DQN/checkpoint_6630/checkpoint-6630"
 Trainer = PPOTrainer
 
-
 # TODO: see ray/rllib/rollout.py -- `run` method for checkpoint restoring
 
 # register env -- For some reason, ray is unable to use already registered env in config
@@ -38,12 +37,11 @@ layout = """
 
 def env_creator(args):
     return gym.make("rware-tiny-1ag-v1", layout=layout, observation_type=ObserationType.FLATTENED,
-               reward_type=RewardType.GLOBAL, n_agents=1, sensor_range=4)
+                    reward_type=RewardType.GLOBAL, n_agents=1, sensor_range=4, give_reward_help=False)
 
 
 env = env_creator(1)
 register_env(env_name, env_creator)
-
 
 ray.init(num_cpus=3, ignore_reinit_error=True, log_to_driver=False)
 config = DEFAULT_CONFIG.copy()
@@ -51,7 +49,8 @@ config['num_workers'] = 3
 config['num_sgd_iter'] = 30
 config['sgd_minibatch_size'] = 128
 config['model']['fcnet_hiddens'] = [100, 100]
-config['num_cpus_per_worker'] = 0  # This avoids running out of resources in the notebook environment when this cell is re-executed
+config[
+    'num_cpus_per_worker'] = 0  # This avoids running out of resources in the notebook environment when this cell is re-executed
 
 agent = Trainer(config, env=env_name)
 
