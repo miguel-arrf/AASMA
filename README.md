@@ -32,10 +32,10 @@ ___
 ## 🤖 | How to run our RL agents:
 
 - Run RL single agent:
-  - ```python singleRL1AgentsMAPPO/src/main.py --config=mappo --env-config=gymma with env_args.time_limit=500 env_args.key="rware:rware-tiny-1ag-v1"```
+  - ```python singleRL1AgentsMAPPO/src/main.py --config=mappo --env-config=gymma with env_args.time_limit=500 env_args.key="rware-tiny-1ag-v1"```
 
 - Run RL multi agent:
-  - ```python multiRL2AgentsMAPPO/src/main.py --config=mappo --env-config=gymma with env_args.time_limit=500 env_args.key="rware:rware-tiny-2ag-v1"```
+  - ```python multiRL2AgentsMAPPO/src/main.py --config=mappo --env-config=gymma with env_args.time_limit=500 env_args.key="rware-tiny-2ag-v1"```
 
 - Run RL collaborative multi agent:
-  - ```python collaborativeRL2AgentsMAA2C/src/main.py --config=maa2c --env-config=gymma with env_args.time_limit=500 env_args.key="rware:rware-tiny-2ag-v1"```
+  - ```python collaborativeRL2AgentsMAA2C/src/main.py --config=maa2c --env-config=gymma with env_args.time_limit=500 env_args.key="rware-tiny-2ag-v1"```
