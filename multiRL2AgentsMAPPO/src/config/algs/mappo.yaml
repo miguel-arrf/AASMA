@@ -42,7 +42,7 @@ t_max: 40000000
 
 hidden_dim: 128 # Size of hidden state for default rnn agent
 
-checkpoint_path : "results/models/mappo_seed562348813_rware:rware-tiny-2ag-v1_2022-06-12 13:28:47.228321/"
+checkpoint_path : "multiRL2AgentsMAPPO/results/models/mappo_seed562348813_rware:rware-tiny-2ag-v1_2022-06-12 13:28:47.228321/"
 evaluate: True
 test_nepisode : 5
 
