@@ -38,7 +38,7 @@ t_max: 40050000
 hidden_dim: 128
 
 
-checkpoint_path : "collaborativeRL2AgentsMAA2C/results/models/maa2c_seed644470259_rware:rware-tiny-2ag-v1_2022-06-12 00:35:25.343081/"
+checkpoint_path : "collaborativeRL2AgentsMAA2C/results/models/maa2c_rware-tiny-2ag-v1/"
 evaluate: True
 test_nepisode : 5
 
