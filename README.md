@@ -30,6 +30,7 @@ ___
   - ```python customMulti/customAgent.py```
 
 ## 🤖 | How to run our RL agents:
+### 🚨 Beware that the UI may take up to 30 seconds to load!
 
 - Run RL single agent:
   - ```python singleRL1AgentsMAPPO/src/main.py --config=mappo --env-config=gymma with env_args.time_limit=500 env_args.key="rware-tiny-1ag-v1"```
