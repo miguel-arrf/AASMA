@@ -20,8 +20,8 @@ ___
 
 ## 🚀 | How to run our custom agents:
 
-- To run our collaborative agent, you can choose which heuristics to use:
-  - ``` python collaborativeEnvironment/run_simulation.py --env colab --firstHeuristic h5 --secondHeuristic h5 ```
+- To run our collaborative agent, you can choose which heuristics to use (h1, h2, h3, h4 or h5):
+  - ``` python collaborativeEnvironment/run_simulation.py --env colab --firstHeuristic h5 --secondHeuristic h2 ```
 
 - To run our custom single agent:
   - ```python customSingle/customAgent.py```
