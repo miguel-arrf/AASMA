@@ -12,7 +12,7 @@ ___
 
 ## 📦 | Installation details:
 
-- Make sure to be using Python 3.8. We have not tested in another version.
+- Make sure to use Python 3.8. We have not tested in other versions.
 - Make sure to create a virtual environment with all the environments in the ```requirements.txt``` file.
   - If for some reason an error related with ```SMAC```appear, make sure to execute ```pip install git+https://github.com/oxwhirl/smac.git```.
 
