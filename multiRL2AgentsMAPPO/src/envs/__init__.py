@@ -9,6 +9,7 @@ from gym.envs import registry as gym_registry
 from gym.spaces import flatdim
 import numpy as np
 from gym.wrappers import TimeLimit as GymTimeLimit
+import rware
 
 def env_fn(env, **kwargs) -> MultiAgentEnv:
     return env(**kwargs)
